@@ -1,0 +1,92 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="png/jpeg" href="{%static 'simpleweb/logo.png'%}">
+	<title>Creative Students</title>
+	 <meta charset="UTF-8">
+	 <meta name ="description" content=" ">
+   <meta name ="viewport" content="width=device-width , initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" type="text/css" href="{%static 'simpleweb/styles.css'%}">
+</head>
+<body>
+
+ <div class="container">
+	 <div class="navigation">
+	 <header>
+		 <img class="logo" src="{%static 'simpleweb/home_icon.png'%}" alt="logo">
+		 <h2 class="logoName" >Creaters</h2>
+			<nav id="nav_bar">
+		 <ul class="links">
+			 <li><a href="#">Homepage</a></li>
+			 <li><a href="#aboutDetails">About Us</a></li>
+			 <li><a href="{%url 'contact'%}">Contact Us</a></li>
+		 </ul>
+			 </nav>
+	 </header>
+	 </div>
+
+	 <div class="startingContainer">
+	 <div  class="introductionDiv">
+		 <h1>See What</h1>
+		 <br>
+		 <h2>Students Can Make</h2>
+		 <br>
+
+		 <p >Get a chance to send us emails and communicate
+		 with the innovativeness of computer science students
+     we have put in alot of work to ensure best delivery of our case viva</p>
+		<button  onclick= "window.location.href='{%url 'contact'%}';">show me more</button>
+	 </div>
+	 <div class="imageMain">
+		 <img src="{%static 'simpleweb/image.jpg'%}" alt="image">
+	 </div>
+ </div>
+ <div class="Talk_to_us">
+	<div class="imageTalk">
+		<img src="{%static 'simpleweb/chat.jpg'%}" alt="image">
+	</div>
+	<div class="details">
+	 <h1>Talk to us</h1>
+	 <p>this is a platform that you are able to send us mail to and we will recieve it too</p>
+	 <br>
+	 <br>
+<br>
+	 <a  href="{%url 'contact'%}">Email Us</a>
+
+	</div>
+ </div>
+ <div class="aboutus" id="aboutDetails">
+	 <div class="image_about">
+	 <img src="{%static 'simpleweb/about.jpg'%}" alt="image">
+	 </div>
+	 <div class="about">
+	 <h1>About Us</h1>
+	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	 </div>
+ </div>
+
+
+ <!-- footer section -->
+
+
+
+ <!-- JavaScript code -->
+ <script type="text/javascript" src="{%static 'simpleweb/app.js'%}"></script>
+ </div>
+<footer>
+	<div class="foot">
+		<p id="credits">All rights reserved </p>
+	
+		<P id="location">a kenyatta university project</P>
+		
+	</div>
+</footer>
+</body>
+</html>
