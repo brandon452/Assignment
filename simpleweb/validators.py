@@ -8,4 +8,4 @@ def validate_domain_name(value):
         raise ValidationError(_("Check your domain name"))
     return value
 
-phone_regex = RegexValidator(regex=r'^\+\d{12}$', message='Phone number must be entered in the format: +999999. Minimum 12 digits.')
+phone_regex = RegexValidator(regex=r'^\+(254)\d{9}$', message='Phone number must be entered in the format: "+254..." Minimum 12 digits.')

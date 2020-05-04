@@ -7,6 +7,6 @@ class ContactForm(forms.Form):
     name = forms.CharField(max_length=130, label="Name")
     email = forms.EmailField(label="Email Address", validators=[validate_domain_name])
     company = forms.CharField(max_length=40, label="School/Company")
-    phone = forms.CharField(widget= forms.TextInput(attrs={'placeholder':'+99..'}), max_length=13, label="Phone", validators=[phone_regex])
+    phone = forms.CharField(widget= forms.TextInput(attrs={'placeholder':'+254..'}), max_length=13, label="Phone", validators=[phone_regex])
     message = forms.CharField(widget = forms.Textarea, label="Message")
 
